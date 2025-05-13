@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Powerpuff Motivation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🤍 Stay Strong, Girl Power! 🤍</h1>
+  <div class="quote" id="quoteBox">
+    “You're sugar, spice, everything nice – and unstoppable power”
+  </div>
+  <button onclick="showRandomQuote()">✨ Motivate Me ✨</button>
+  <img src="https://ijn12hoh65.ufs.sh/f/gCdr8Ko1IyUJcFsp5MCndRt2aZoIPNXw9hxDJrUSsy48BQ5q" alt="Powerpuff Girls">
+  <div class="footer">
+    Made with 💕 and sugar, spice, and everything nice🪄
+  </div>
+
+  <script>
+    const quotes = [
+      "“You are braver than you believe, stronger than you seem, and smarter than you think”",
+      "“The future belongs to those who believe in the beauty of their dreams” – Eleanor Roosevelt",
+      "“Don't be afraid to sparkle a little brighter”",
+      "“You were born to stand out, not fit in”",
+      "“Believe in yourself like the Powerpuff Girls believe in saving the world”",
+      "“Courage doesn't always roar. Sometimes it’s a quiet voice at the end of the day saying, ‘I will try again tomorrow’”",
+      "“You're sugar, spice, everything nice – and unstoppable power”",
+      "“Even superheroes need a little motivation”"
+    ];
+
+    function showRandomQuote() {
+      const quoteBox = document.getElementById('quoteBox');
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      quoteBox.textContent = quotes[randomIndex];
+    }
+  </script>
+</body>
+</html>
